@@ -73,8 +73,8 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func findAction(_ sender: Any) {
-        if let user = realMInstance.objects(User.self).filter("name = %@", txtDtata.text ?? "No Name" ).first {
-            print(user)
+        if let user1 = realMInstance.objects(User.self).filter("name = %@", txtDtata.text ?? "No Name" ).first {
+            print(user1)
         }
     }
     @IBAction func fetchAllAction(_ sender: Any) {
